@@ -1,4 +1,4 @@
-package com.noryangjin.study.dao;
+package com.noryangjin.study.less02.dao;
 
 import org.springframework.stereotype.Repository;
 

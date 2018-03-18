@@ -1,4 +1,4 @@
-package com.noryangjin.study.service;
+package com.noryangjin.study.less02.service;
 
 public interface Less02Service {
 	

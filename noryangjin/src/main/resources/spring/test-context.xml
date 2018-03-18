@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	
+    
+    <bean id="beanTest" class="com.noryangjin.study.less02.diUtil.BeanTest">
+    	<constructor-arg value="컴퓨터"/>
+    	<constructor-arg value="마우스"/>
+    	<constructor-arg value="키보드"/>
+    	<constructor-arg value="모니터"/>
+    </bean>
+    
+    <!-- 태그설명 -->
+    <!-- @Autowired, @Resource를 이용할때 선언 -->
+    <!-- <context:annotation-config/>  -->
+    
+    <!-- @Component, @Service 등의 어노테이션이 설정된 클래스를 읽어들여서, Di컨테이너에 등록되고, 
+    bean=package속성으로 지정한 패키지 아래의 컴포넌트를 검색한다.  -->
+   	<!-- 검색에서 제외할 컴포넌트 조건 @Component, @Repository, @Service, @Controller을 읽어들이지 않음 -->
+   	<!-- 검색할 컴포넌트의 조건 -->
+	<!-- <context:component-scan base-package="com.code">
+    	<context:exclude-filter type="annotation" expression=""/> 
+    	<context:include-filter type="annotation" expression=""/> 
+    </context:component-scan> -->
+
+    
+</beans>
